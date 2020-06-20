@@ -1,0 +1,12 @@
+
+<p>
+	Start editing to see some magic happen :)
+</p>
+
+<div *ngIf="heroes$ | async as heros">
+	<div *ngFor="let hero of heros">
+		 {{ hero.name }}<br/>
+  </div>
+</div>
+
+<button (click)="nextPage()">NEXT PAGE</button>
